@@ -1,6 +1,6 @@
 This is Anna Macdonald's completion of [FreeCodeCamp's Product Landing Page project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page).
 
-A [preview of Anna's product landing page](http://annafitree.github.io/fcc-product-landing-page)
+A [preview of Anna's product landing page](http://annafirtree.github.io/fcc-product-landing-page)
 
 Tests passed:
 ![screenshot showing tests passed](TestPassed.png)
