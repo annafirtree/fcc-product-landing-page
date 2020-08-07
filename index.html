@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+            :root{
+                --navheight: 50px;
+            }
+            body, header{
+                margin: 0px;
+            }
+            
+            #nav-bar{
+                position:fixed;
+                top:0px;
+                left: 0px;
+                right: 0px;
+                height: var(--navheight, 50px);
+                background: lightgray;
+                width: auto;
+                padding: 5px 10px 5px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+           /* h1{
+               flex: 1 1 auto;
+           }
+           #nav-right{
+               flex: 1 1 auto;
+           } */
+            #menu-icon{
+                display: none;
+            }
+            .nav-link{
+                margin: 10px;
+            }
+            
+            #header-img{
+                margin: var(--navheight, 60px) auto 20px auto;
+                display: block;
+            }
+            #form{
+                width:fit-content;
+                margin: auto;
+                text-align: center;
+            }
+           
+            section{
+                margin: 50px 5% 10px 5%;
+                padding-top: 70px;
+            }
+            h2{
+                border: 1px solid black;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                background:lightgray;
+            }
+            h3{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-variant:small-caps;
+            }
+            #video{
+                margin: auto;
+                display: block;
+            }
+            #pricing-flexbox{
+                display: flex;
+            }
+            .price-container{
+                border: 1px solid black;
+                border-radius: 5px;
+                text-align: center;
+                width: 80%;
+                padding: 10px;
+                margin: 2%;
+            }
+           
+            .price{
+                font-size: larger;
+                font-style: italic;
+            }
+
+
+            @media (max-width: 640px) {
+                #menu-icon{
+                    display: block;
+                    height: 20px;
+                    width: 20px;
+                }
+                #nav-right{
+                    display:none;
+                }
+                #header-img{
+                    width:100%;
+                }
+                #pricing-flexbox{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .price-container{
+                    width:80%;
+                }
+                #video{
+                    width:100%;
+                }
+                
+                
+            }
+
+        </style>
+	</head>
+	<body>
+		<header id="header">
+			
+            <nav id="nav-bar">
+                <!--left-->
+                <h1>Sturdy Satellites</h1>
+                <!--right-->
+                <div id="nav-right">
+                  <a href="#features" class="nav-link">Features</a>
+                 <a href="#video-container" class="nav-link">Selection Parade</a>
+                 <a href="#pricing" class="nav-link">Pricing</a>
+                </div>
+                 <!--right for mobile-->
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="Hamburger icon.svg" id="menu-icon">
+                
+            </nav>
+            <!--satellite photo-->
+            <img src="satellitepic.jpg" id="header-img" alt="picture of a satellite over earth">
+        </header>
+        
+
+		<main>
+
+		<!-- ask for email -->
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <p>Get Satellite Updates!</p>
+                <input id="email" type="email" placeholder="Enter email address" name="email">
+                <input id="submit" type="submit">
+            </form>
+
+        <!-- features section -->
+            <section id="features">
+                <h2>Features</h2>
+                <h3>Self-propelling</h3>
+                <p>Space is awash with tiny particles called photons. Our satellites have special equipment designed to capture these photons and use them as fuel to propel themselves where they need to go. The satellites are entirely self-sustaining, so you don't need to worry about stopping by to refuel it.</p>
+                <h3>Easy to launch</h3>
+                <p>With our patented two-step process, simply deposit the launching fee into <a href="https://shop.spacex.com/">SpaceX's bank account</a> and pick a date on their calendar. That's it! All the work of launching your satellite into space is done for you.</a></p>
+                <h3>Long-lasting</h3>
+                <p>Using a new, safer, improved version of the nanobots that turned Mars into grey goo, our satellites are self-repairing for added durability. They'll outlast the Sun!</p>
+
+
+            </section>
+
+        <!--video section-->
+            <section id="video-container">
+                <h2>Selection Parade</h2>
+                <p>Watch this parade of our various styles of satellites. This selection demonstrates the wide variety of options you can expect to experience from your very own satellite. </p>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/l58nWIvyYs0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+        <!--pricing section-->
+            <section id="pricing">
+                <h2>Pricing</h2>
+                <div id="pricing-flexbox">
+                    <!--Prelaunched-->
+                    <div class="price-container">
+                        <h3>Pre-launched</h3>
+                        <p class="price">$5.7M</p>
+                        <p class="pricetext">For your maximum convenience, these satellites have already been launched into space.</p>
+                        <button type="button">Buy Now</button>
+                    </div>
+
+
+                    <!--Flowery Princess-->
+                    <div class="price-container">
+                        <h3>Flowery Princess</h3>
+                        <p class="price">$1.9M</p>
+                        <p class="pricetext">These satellites come complete with pink flower decorations and can be inscribed with the Disney Princess of your choice. An ideal gift for that five-year-old girl—or boy! We don't judge—in your life.</p>
+                        <button type="button">Buy Now</button>
+                    </div>
+
+                    <!--Stalker-->
+                    <div class="price-container">
+                        <h3>Stalker</h3>
+                        <p class="price">$1.1M</p>
+                        <p class="pricetext">This satellite is specially designed to always track that special someone in your life, so you will always know where they're going, what they're doing, and who they're with.</p>
+                        <button type="button">Buy Now</button>
+                    </div>
+
+
+                 </div>
+            </section>
+        </main>
+		<footer></footer>
+	</body>
+</html>
